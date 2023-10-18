@@ -1,0 +1,5 @@
+idade = input('qual a sua idade: ')
+idade_familiar = input('qual a idade do seu irmao: ')
+nome = input('informe o seu nome: ')
+print(int(idade) * int(idade_familiar)) # informar nome inteirto -> int(nome)
+print(nome)
