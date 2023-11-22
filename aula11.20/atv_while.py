@@ -23,4 +23,3 @@ contador = 1
 numero = 0
 while contador <= 5:
     numero = input('Informe um numero: ')
-    
