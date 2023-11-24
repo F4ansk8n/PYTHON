@@ -1,28 +1,45 @@
-# for -> trabalha com interaveis!!
-#   tem que possuir uma variavel de controle
-# metodos:
-# > iter() -> transforma um objento em interavel
-# > next() -> função par imprimir os iteraveis de uma "lista"
+# for trabalha com iteraveis!!!
+# tem que possuir uma variavel de controle
+# iter()
+# next()
 
-# nome = 'Paulo'      #
-# texto = iter(nome)  # 
-# print(texto)        # funcionamento do for atras dos "panos"
-# print(next(texto))  # 
-# print(next(texto))  # 
-
-# print('='*20)
+# nome = 'Paulo'
+# letra = iter(nome)
+# print(next(letra))
+# print(next(letra))
+# print(next(letra))
+# print(next(letra))
+# print(next(letra))
 
 # for letra in nome:
 #     print(letra)
 
-# enumerate () -> é uma iterador de indices e valores
-lista_nome = ['joão', 'pedro', 'mateus', 'judas', 'tiago']
-lista_enumerada = enumerate(lista_nome)
-print(lista_nome)
-print(list(lista_enumerada))
+#enumerate() é um iterador de indices e valores
 
-for item in lista_enumerada:
-    print(item)
+# lista_nomes = [ 'João', 'Pedro', 'Mateus', 'Judas', 'Tiago' ]
 
-for indice_lista, item_lista in enumerate(lista_nome):
-    print(f'{item_lista} e o {indice_lista} da lista')
+# lista_enumerada = enumerate(lista_nomes)
+
+# print(lista_nomes)
+# print(list(lista_enumerada))
+
+# for item in lista_enumerada:
+#     print(item)
+
+# for indice_lista, item_lista in enumerate(lista_nomes):
+#     print(f'{ item_lista } é o { indice_lista } da lista')
+
+
+# Crie um codigo que imprime todos os dias da semana na tela
+
+dias_semana = [ 'domigo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado' ]
+
+for dia in dias_semana:
+    print(dia)
+
+# escreva um codigo que imprima os numeros de 1 até 1000 e avise quando chegar nos multiplos de 100
+for n in range(1, 1001):
+    if n % 100 == 0:
+        print(f'{n} e multiplo de 100')
+    else:
+        print(n)
