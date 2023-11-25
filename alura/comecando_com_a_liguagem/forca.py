@@ -21,10 +21,3 @@ def jogar():
             if(chute.upper() == letra.upper()):
                 letras_acertadas[index] = letra
             index = index + 1
-
-        print(letras_acertadas)
-
-    print("Fim do jogo")
-
-if(__name__ == "__main__"):
-    jogar()
