@@ -1,7 +1,7 @@
 # inport(nome_da_função)
 #   dir(nome_da_funcao)
 
-from random import randint
+from random import randint # forma para fazer import de uma função dda biblioteca
 # import random
 placar_jogador = 0
 placar_computador = 0
@@ -35,3 +35,4 @@ while True:
                        continue
              print('Volte sempre!')
              break
+        
