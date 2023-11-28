@@ -27,11 +27,31 @@ print(frase.split())
 
 
 # 1. Faca um programa que peça uma string e a imprima.
+nome = input('Digite um nome: ')
+print(nome)
+
 # 2. Crie um programa que imprima o comprimento de uma string.
+nome = input('Digite um nome: ')
+print(len(nome))
+
 # 3. faça um programa que peça um nome e imprima as 4 primeiras letras desse nome
+nome = input('Digite um nome: ')
+print(nome[0:4])
+
 # 4. faça um programa que peça duas strings e compare as duas, imprima o resultado
+nome = input('informe seu nome: ')
+sobrenome = input('Informe seu sobrenome: ')
+print(nome + sobrenome)
+
 # 5. faça um programa que peça um nome e imprima quantas vogais tem nesse nome
+m = input('Digite um nome: ') .lower
+vogais = 'aeiou'
+
+
 # 6. Faca um programa que peça um nome do usuario. O programa imprime o nome sem suas vogais
+nome = input('Digite um nome: ')
+vogais = 'aeiou'
 
 # 7. Faca um programa que peça uma palavra e a imprima de tras-para-frente
-nome = input('Digite um nome'); print(nome[::-1])
+nome = input('Digite um nome: ')
+print(nome[::-1])
