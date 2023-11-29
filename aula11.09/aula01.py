@@ -1,3 +1,16 @@
+# 1. 
+texto ='Somos uma escola de tecnologia de informação que cria pontes entre pessoas, conhecimento e empresas. Ambiente que proporciona conexão, troca de conhecimentos e aprendizado compartilhado entre participantes, instrutores e empresas parceiras.'
+print (texto[0:5])
+print (texto[10:16])
+print (texto[20:30])
+print (texto[67:74])
+print (texto[76:89])
+print (texto[-10:-1])
+print (texto[-33:-22])
+print (texto[-54:-49])
+print (texto[-80:-69])
+
+# 2.
 texto = "Somos uma escola de tecnologia de informação que cria pontes entre pessoas, conhecimento e empresas. Ambiente que proporciona conexão, troca de conhecimentos e aprendizado compartilhado entre participantes, instrutores e empresas parceiras."
 string1 = texto[0:5] #somos
 string2 = texto[67:74] #pessoas
