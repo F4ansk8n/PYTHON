@@ -18,7 +18,7 @@ print('*' * 20)
 
 contador = 5
 while contador > 0:
-    print(f'Esse é o print do numer {contador}')
+    print(f'Esse é o print do numer0 {contador}')
     contador -= 1
 
 # join - unir strings
