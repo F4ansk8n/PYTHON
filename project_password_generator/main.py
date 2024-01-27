@@ -1,4 +1,3 @@
-
 def gerandor_de_senha():
     import random
     
