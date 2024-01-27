@@ -1,0 +1,302 @@
+É uma linguagem dinamicamente tipada, o que significa que não é necessário declarar o tipo de variável ou fazer casting (mudar o tipo de variavel), pois o interpretador se encarrega disso para nós!!!
+
+
+<> Tipos de dados padrão
+* Inteiro(int) 
+...
+	idade = 20
+...
+
+* Ponto flutuante(float)
+...
+	altuta = 1.80
+...
+
+* Complexo(complex)
+...
+	a = 12 + 8
+...
+
+* String(str)
+...
+	nome = "Francisco"
+...
+
+* Boolean(boll)
+...
+	false/true
+...
+
+* Lista(list)
+...
+	nomes = ['Francisco', 'Tiago']
+	notas = [ 8.5, 9, 7.5]
+...
+
+* Tuplas(tuple)
+...
+	valores = (120, 50, 44)
+...
+
+* Dicionarios(dic)
+...
+	usuarios = {'Alice: 12, 'Maria': 24}
+...
+___________________________________________________________________________________________________________
+<> Estruturas de codições
+* if -> verifica se a codição é verdadeira
+...
+	media = 7
+	if media > 6:
+		print('Você foi aprovado')
+...
+
+* else -> caso nao seja verdadeira, executaremos o else
+...
+	media = 6
+	if media < 4:
+		print('Você foi reprovado')
+	else:
+		print('Você foi aprovado')
+...
+
+* elif -> quando precisa verificar mais de uma condicão
+'''
+	if media > 4:
+		print('Você foi reprovado')
+	elif media > 5 and media < 7:
+		print('Você foi para a recuperação')
+	else:
+		print('Você foi aprovado')
+...____________________________________________________________________________________________________________
+<> Lista
+ _________________________________________
+ | Uma lista é representada pelos []	 |
+ 
+> Alguns Metodos:
+* len - metodo que retorna a quantidade de itens de uma lista
+...
+	print(len(lista))
+...
+
+* append - metodo que insere itens no final da lista
+...
+	lista.append('novo_nome')
+...
+
+* del - remove pelo indice especifico da lista
+...
+	del lista[indece_da_lista]
+...
+
+* remove - remove um objeto especificado da lista
+...
+	lista.remove('indece_para_remove')
+...
+
+* pop - remove o ultimo objeto da lista
+...
+	lista.pop()
+...
+
+* insert - adiciona um obejto no inicio da lista
+...
+	lista.insert('nome')
+...____________________________________________________________________________________________________________
+<> Set
+ ________________________
+ | Set são conjuntos    |
+
+> Alguns Metodos:
+* Adicionando elementos
+...
+	meu_set = {1, 2, 3, 4, 1}
+	meu_set.add(2)
+...
+
+* Atualizando set
+...
+	meu_set = {1, 2, 3, 4, 1}
+	meu_set.update([3, 4, 5, 6])
+...
+
+* Removendo elemento
+...
+	meu_set = {1, 2, 3, 4, 1}
+	meu_set.discard(2)
+...
+
+> Operações matemáticas com Sets:
+...
+	set = { 1, 2, 3, 4, 5 }
+	set_2 = { 4, 5, 6, 7, 8 }
+				        _
+	set_3 = set | set_2  | União
+	print(set_3)		_|
+
+				        _
+	set_3 = set & set_2	 | Interseção
+	print(set_3)		_|
+
+				        _
+	set_3 = set - set_2  | Diferença
+	print(set_3)		_|
+
+				        _
+	set_3 = set_2 - set  | Diferença
+	print(set_3)		_|
+
+				        _
+	set_3 = set ^ set_2  | Diferença Simétrica
+	print(set_3)		_|
+...
+____________________________________________________________________________________________________________
+<> Estruturas de repeticão
+* While:
+...
+	contador = 0
+	while contador < 5:
+		idade_aluno = int(input('Informe sua idade: '))
+    		if idade_aluno > 13:
+        		print(f'O aluno { contador } tem mais de 13 anos')
+    		contador += 1
+...
+
+* While True -> loop infinito:
+...
+	while True:
+		nota = int(input('informe a nota: '))
+    		if nota < 0 or nota > 10:
+        		break
+...
+
+* For:
+...
+	dias_semana = [ 'domigo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado' ]
+
+	for n in dias_semana:
+		print(n)
+...
+____________________________________________________________________________________________________________
+<> Funções
+ ____________________________________________________________________________
+ | São blocos de codigos que são executados somente quandos são chamados    |
+ | Paramentro: def			 				                                |
+ | Devem ter prioridade no codigo					                        |
+
+...
+	def media(nota1, nota2, nota3):
+    		media=(nota1 + nota2 + nota3) /3
+    		return media
+
+	nota01 = int(input('Informe a primeira nota: '))
+	nota02 = int(input('Informe a segunda nota: '))
+	nota03 = int(input('Informe a terçeira nota: '))
+
+	print(media(nota01, nota02, nota03))
+...
+____________________________________________________________________________________________________________
+<> If ternario
+* Normal
+...
+	salario = float(input('Informe o valor do seu salario: '))
+
+	if salario >= 2500.00:
+    		print('IR será cobrado')
+	else:
+    		print('IR não será cobrado')
+...
+
+* Condicao ternaria -> acontece em formato de linha
+...
+	variavel_controle = 'IR será cobrado' if salario >= 2500.00 else 'IR não será cobrado'
+	print(variavel_controle)
+...
+____________________________________________________________________________________________________________
+<> Dicionario
+ ________________________________________________
+ | possuem CHAVE(KEYS) e VALOR(VALUES)	    	|
+ | arametro: {} ou dict()		        	    |
+
+> Obtendo chaves e valores:
+...
+	computador = {'CPU': 'Intel', 'RAM': '8gb', 'SSD': '250bg'}
+	print(computador.keys())
+...
+
+> Obter apenas os valores das chaves:
+...
+	notas = {'Mat': 5, 'Por': 7, 'His': 8}
+	print(notas.values())
+...
+
+> Percorrendo os elementos:
+* Função dict.keys()
+...
+	computador = {'CPU': 'Intel', 'RAM': '8gb', 'SSD': '250bg'}
+
+	for chave in computador.keys():
+  	print(f'Chave = {chave} e Valor = {computador[chave]}')
+...
+
+* Função dict.values()
+...
+	notas = {'Mat': 5, 'Por': 7, 'His': 8}
+
+	for valor in notas.values():
+    		print(f'Valor: {valor}')
+...
+
+> Percorrendo as chaves e valores:
+...
+	frutas = {'pera': 10, 'uva': 2, 'maça': 55}
+	print(frutas.items())
+...
+
+> Alguns Metodos:
+* Adicionando
+...
+	dicio = {'nome': 'Erick'}
+	dicio['idade'] = 20
+...
+
+* Adicionando e atualizando
+...
+	dicio = {'nome': 'Erick'}
+					 	_
+	dicio.update({'nome':'Matheus'})	_| Atualiza o elemento de chave 'nome'
+
+					_
+	dicio.update({'idade':18})	 | Cria os elementos de chave 'idade' e 'tamanho'
+	dicio.update(tamanho=1.60)	_|
+...
+
+* Excluir um elemento
+...
+	pessoa = {'nome': 'Matheus', 'idade': 18, 'tamanho': 1.60}
+	del pessoa['tamanho']
+...
+
+* Remove o item cujo a chave foi especificada
+...
+	sacola = {'maça': 2, 'ovos': 6, 'farinha': 2}
+	ovos = sacola.pop('ovos')
+...
+
+* Também remove o último elemento
+...
+	sacola = {'maça': 2, 'ovos': 6, 'farinha': 2}
+	farinha = sacola.popitem()
+...
+
+* Limpando dicionário
+...
+	dicio = {'nome': 'F9', 'motor': 'v8', 'ano': 2019}
+	dicio.clear()
+...
+
+* Copiando dicionário
+...
+	dicio = {"operacao": "web scraping", "dados": 250}
+	copia = dicio.copy()
+...
